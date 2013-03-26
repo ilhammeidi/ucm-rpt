@@ -1,0 +1,14 @@
+name = UCMRPT Fixed
+description = Tableless, recolorable, multi-column, fixed width theme based on Minnelli.
+version = VERSION
+core = 6.x
+base theme = ucmrpt-fluid
+stylesheets[all][] = ucmrpt-fixed.css
+stylesheets[screen][] = browser-detection.css
+scripts[] = browser-detection.js
+
+; Information added by drupal.org packaging script on 2012-05-02
+version = "6.26"
+project = "drupal"
+datestamp = "1335977158"
+

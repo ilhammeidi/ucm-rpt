@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>UC Libraries - Find Books</title>
+<link href="css/css_uclibraries.css" rel="stylesheet" type="text/css" media="all" />
+<style type="text/css">#content ul {padding-bottom:0px;}</style>
+<script type="text/javascript" src="scripts/jquery-1.4.2.min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+	$('head').append('<style type="text/css">#content .hidden {display:none} #instructions {display:none}</style>');
+	function feedback(){
+		var response = $('#responseText').val();
+		$('#interactivity').html('<p>Your response was <span style="color:#F60;font-style:italic">' + response + '</span>. How did you do? Click the button below to check your answer.</p><p><input type="button" id="showButton" value="Show Answers" />\<script type="text/javascript"\>$(\'#showButton\').click(show);\</script\></p>');
+	}
+	function show(){
+		$('#interactivity').html('<p>Great job! Click the forward arrow at the top to go to the next page.</p>')
+		$('.hidden').fadeIn('slow');
+	}
+/* ]]> */
+</script>
+</head>
+<body>
+<div id="wrapper">
+  <div id="page">
+    <div id="content">
+      <h3>Which Catalog?</h3>
+      <div id="instructions">
+        <p>Below you will find a list of links to each library homepage and the corresponding catalogs:</p>
+      </div>
+      <div style="width:400px; padding-bottom:10px; float:left">
+        <ul>
+            <li><a href="http://www.lib.berkeley.edu/" target="_blank">UC  Berkeley Libraries</a>
+              <ul>
+                <li class="hidden"><a href="http://oskicat.berkeley.edu/" target="_blank">OskiCat</a></li>
+              </ul>
+            </li>
+            <li><a href="http://www.lib.ucdavis.edu/" target="_blank">UC  Davis Libraries</a>
+              <ul>
+                <li class="hidden"><a href="http://harvest.lib.ucdavis.edu/" target="_blank">Harvest</a></li>
+              </ul>
+            </li>
+            <li><a href="http://www.lib.uci.edu/" target="_blank">UC  Irvine Libraries</a>
+              <ul>
+                <li class="hidden"><a href="http://antpac.lib.uci.edu/" target="_blank">ANTPAC</a></li>
+              </ul>
+            </li>
+            <li><a href="http://www.library.ucla.edu/" target="_blank">UC  Los Angeles Libraries</a>
+              <ul>
+                <li class="hidden"><a href="http://catalog.library.ucla.edu/" target="_blank">UCLA Library Catalog</a></li>
+              </ul>
+            </li>
+            <li><a href="http://ucmercedlibrary.info/" target="_blank">UC  Merced Library</a>
+              <ul>
+                <li class="hidden"><a href="http://ucmerced.worldcat.org/" target="_blank">Melvyl</a></li>
+              </ul>
+            </li>
+          </ul>
+          </div>
+          <div style="width:400px; padding-bottom:10px; float:left">
+          <ul>
+            <li><a href="http://library.ucr.edu/" target="_blank">UC  Riverside Libraries</a>
+              <ul>
+                <li class="hidden"><a href="http://scotty.ucr.edu/" target="_blank">SCOTTY</a></li>
+              </ul>
+            </li>
+            <li><a href="http://libraries.ucsd.edu/" target="_blank">UC  San Diego Libraries</a>
+              <ul>
+                <li class="hidden"><a href="http://roger.ucsd.edu/" target="_blank">Roger</a></li>
+              </ul>
+            </li>
+            <li><a href="http://www.library.ucsf.edu/" target="_blank">UC  San Francisco Library</a>
+              <ul>
+                <li class="hidden"><a href="http://ucsfcat.library.ucsf.edu/" target="_blank">UCSF Library Catalog</a></li>
+              </ul>
+            </li>
+            <li><a href="http://www.library.ucsb.edu/" target="_blank">UC  Santa Barbara Libraries</a>
+              <ul>
+                <li class="hidden"><a href="http://pegasus.library.ucsb.edu/" target="_blank">Pegasus</a></li>
+              </ul>
+            </li>
+            <li><a href="http://library.ucsc.edu/" target="_blank">UC  Santa Cruz Libraries</a>
+              <ul>
+                <li class="hidden"><a href="http://cruzcat.ucsc.edu/" target="_blank">CRUZCAT</a></li>
+              </ul>
+            </li>
+          </ul>
+          </div>
+          <div id="interactivity"></div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+/* <![CDATA[ */
+	$('#instructions').html('<p>Click on the link for your library’s homepage to find the catalog. Hint: Phrases like “Find Books”, “Search Catalog”, “Search and Find” or “Catalogs and Databases” are often used to locate and describe the library catalog.</p>');
+	$('#instructions').show();
+	$('#interactivity').html('<p>Once you\'ve  found the catalog for your library, enter the name below and press submit.</p><p>Catalog Name: <input type="text" id="responseText" /> <input type="submit" id="responseButton" value="Submit" />\<script type="text/javascript">$(\'#responseButton\').click(feedback);\</script\>');
+/* ]]> */
+</script>
+</body>
+</html>
