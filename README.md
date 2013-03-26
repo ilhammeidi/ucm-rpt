@@ -27,3 +27,6 @@ CUSTOMIZATON
 * SOCIAL LINKS. The Facebook, Google+, and Twitter buttons are located in the same block as the footer links.
 * FEEDBACK LINK. The feedback link uses the [Feedback module] (http://drupal.org/project/feedback). Feedback messages are recorded at `http://yoursite.tld/admin/reports/feedback`.
 
+----
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-nd/3.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">University of California (UC) Libraries "Begin Research Tutorial" is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.en_US"> Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License</a>.
+Please contact us through GitHub for reuse of the content that falls outside the scope of this license.
