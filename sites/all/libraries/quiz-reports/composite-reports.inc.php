@@ -1,5 +1,15 @@
 <?php
 
+/**
+ * @file
+ * Include file for creating additional reports not included with Quiz module.
+ * 
+ * Point your browser to http://yoursite.tld/path/to/ucm-rpt/quiztest/summary-scores and you will see different
+ * options depending on your user access level. There is a button at the bottom to download a CSV for Excel.
+ * 	- Faculty instructors will only see scores for their students.
+ * 	- Quizmasters and Admins will be able to see all scores.
+ */
+
 global $user;
 if (!in_array("Quiz Master", $user->roles) && !in_array("Faculty Instructor", $user->roles) && !user_access('administer')) {
 	$restrict_student = " AND `m`.`uid` = '" . $user->uid . "'";
