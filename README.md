@@ -27,6 +27,40 @@ CUSTOMIZATON
 * SOCIAL LINKS. The Facebook, Google+, and Twitter buttons are located in the same block as the footer links.
 * FEEDBACK LINK. The feedback link uses the [Feedback module] (http://drupal.org/project/feedback). Feedback messages are recorded at `http://yoursite.tld/admin/reports/feedback`.
 
+TUTORIAL PAGES
+---------
+The pages of the tutorial can be found at `http://yoursite.tld/admin/content/node` by setting the type to 'Page.' The category filter may also be used to display the RPT Section you want by selecting the Section title from the bottom of the list of the options. Click the 'edit' link at the end of the row of the page you want to edit.
+
+* To add a page to an existing section, go to `http://yoursite.tld/node/add/page`.
+ 1. Enter a title.
+ 2. Select a section from the "RPT Sections" box.
+ 3. Enter the content in the "Body" box.
+ 4. In the 'URL path settings' box, enter the alias you want to use for this page.
+  * For example: `begin_20`.
+ 5. Click 'Save' when done.
+ 
+* To create a new section, go to `http://yoursite.tld/admin/content/taxonomy/2/add/term`.
+ 1. Enter the new section title in the 'Term name' box.
+ 2. Enter the description in the 'Description' box.
+ 3. Follow the steps above to add pages to the section.
+
+QUIZZES
+---------
+We are using the [Quiz Module] (http://drupal.org/project/quiz) for the quizzes. Each section has multiple quiz questions, which are randomly selected from designated pools. 
+ 1. Set the type to 'Quiz' to see all the existing quizzes.
+ 2. To the type to 'Multiple choice question' to see the individual quiz questions.
+  * We only 'Multiple choice question' for all questions, even the true/false ones.
+ 3. Click 'edit' at the end of the row to edit the question.
+
+* To add a quiz to an existing section, go to `http://yoursite.tld/node/add/quiz`.
+ 1. Enter a title.
+ 2. Select a section from the "RPT Sections" box.
+ 3. Enter the description in the "Description" box.
+ 4. Expand the 'Pass/fail' and 'Taking' options and enter information as needed.
+ 5. In the 'URL path settings' box, enter the alias you want to use for this page.
+ 6. Click 'Save' when done.
+
+LICENSE
 ----
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-nd/3.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">University of California (UC) Libraries "Begin Research Tutorial" is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.en_US"> Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License</a>.
-Please contact us through GitHub for reuse of the content that falls outside the scope of this license.
+Please email us at library@ucmerced.edu for reuse of the content that falls outside the scope of this license.
